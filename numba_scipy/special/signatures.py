@@ -19,6 +19,8 @@ NUMBA_TO_CTYPES = {
     numba.types.long_: ctypes.c_long,
 }
 
+logger = logging.getLogger("numba_scipy.special.signatures")
+
 
 def parse_capsule_name(capsule):
     logger.debug(f"Parsing capsule name: {calsule}")
